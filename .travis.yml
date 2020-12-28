@@ -8,3 +8,11 @@ script:
 branches:
   only:
     - master
+    - dev
+deploy:
+  provider: heroku
+  api_key:
+    secure: TDryLPBTLqcWEFn2uoOIqA
+  app:
+    master: nodehello-world99
+    dev: nodehello-world-staging
